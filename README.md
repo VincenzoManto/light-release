@@ -100,9 +100,9 @@ If you find Light Release useful, please consider citing it in your work:
 
 ```markdown
 @software{light_release,
-  author = {Your Name},
+  author = {Vincenzo Manto},
   title = {Light Release},
   year = {2024},
-  url = {https://github.com/yourusername/light-release},
+  url = {https://github.com/VincenzoManto/light-release},
 }
 ```
