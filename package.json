@@ -1,7 +1,7 @@
 {
   "name": "light-release",
   "version": "2.0.4",
-  "description": "Simple semantic release tool compatible with semantic-release commits and GitHub/Azure close words.",
+  "description": "A lightweight tool to automate your release process, compatible with conventional commit messages. It reads your commit history, determines the release type, and generates release notes without unnecessary dependencies.",
   "bin": {
     "light-release": "./bin/release.js"
   },
@@ -9,6 +9,32 @@
     "release": "light-release",
     "publish:npm": "light-release && npm publish"
   },
+  "keywords": [
+    "release",
+    "automation",
+    "conventional-commits",
+    "changelog",
+    "release-notes",
+    "config",
+    "npm",
+    "js",
+    "simple",
+    "version-control",
+    "versioning",
+    "package-json",
+    "version",
+    "release",
+    "semantic-release",
+    "versioning-semantics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VincenzoManto/light-release.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VincenzoManto/light-release/issues"
+  },
+  "homepage": "https://github.com/VincenzoManto/light-release#readme",
   "dependencies": {
     "fs-extra": "^10.0.0"
   },
