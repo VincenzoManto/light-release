@@ -39,6 +39,22 @@ Using Light Release is as simple as pie! Once installed, you can run it from the
 npx light-release
 ```
 
+**Another method**, extremely more useful is to include light-release among your package scripts:
+
+To include Light Release in your package scripts, add the following to the `scripts` section of your `package.json` file:
+
+```json
+"scripts": {
+  "release": "light-release"
+}
+```
+
+Now, you can run Light Release using the following command:
+
+```bash
+npm run release
+```
+
 This will analyze your commit history, determine the release version, and generate the release notes in both HTML and Markdown formats. 
 
 ### Configuration
