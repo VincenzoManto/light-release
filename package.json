@@ -1,6 +1,6 @@
 {
   "name": "light-release",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple semantic release tool compatible with semantic-release commits and GitHub/Azure close words.",
   "bin": {
     "light-release": "./bin/release.js"
