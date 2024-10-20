@@ -5,7 +5,7 @@
   "badgeStyle": "flat-square",
   "dateFormat": "YYYY-MM-DD",
   "showCommitImpact": true,
-  "autoCommit": false,
+  "autoCommit": true,
   "showAuthorLinks": true,
   "defaultImpactThresholds": {
     "low": 1,
