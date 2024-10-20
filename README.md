@@ -6,10 +6,7 @@
 Light Release is a lightweight alternative to [semantic-release](https://semantic-release.gitbook.io/semantic-release/) designed to simplify your release process while maintaining compatibility with conventional commit messages. It reads your commit history, determines the type of release (major, minor, or patch), and generates visually appealing release notes—all without unnecessary dependencies!
 
 
-<img src="assets/logo.png" alt="Light Release Logo" width="200"/>
-
-
-
+<img src="assets/logo.png" alt="Light Release Logo" width="50"/>
 ![npm version](https://img.shields.io/npm/v/light-release)
 ![npm downloads](https://img.shields.io/npm/dm/light-release)
 ![test passed](https://img.shields.io/badge/tests-passing-brightgreen)
