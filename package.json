@@ -6,7 +6,8 @@
     "light-release": "./bin/release.js"
   },
   "scripts": {
-    "light-release": "light-release"
+    "release": "light-release",
+    "publish:npm": "light-release && npm publish"
   },
   "dependencies": {
     "fs-extra": "^10.0.0"
