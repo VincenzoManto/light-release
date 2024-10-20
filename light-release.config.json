@@ -1,0 +1,14 @@
+{
+  "generateMarkdown": true,
+  "generateHTML": true,
+  "releaseNotesDir": ".release-notes",
+  "badgeStyle": "flat-square",
+  "dateFormat": "YYYY-MM-DD",
+  "showCommitImpact": true,
+  "showAuthorLinks": true,
+  "defaultImpactThresholds": {
+    "low": 1,
+    "medium": 5,
+    "high": 10
+  }
+}

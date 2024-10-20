@@ -56,7 +56,7 @@ const config = loadConfig();
 
 const commits = getCommits();
 
-const newVersionType = classifyVersion(commits);
+const newVersionType = classifyVersion(commits, config);
 
 const newVersion = updateVersion(newVersionType);
 
