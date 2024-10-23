@@ -58,7 +58,7 @@ const commits = getCommits();
 
 const newVersionType = classifyVersion(commits, config);
 
-const newVersion = updateVersion(newVersionType);
+const newVersion = updateVersion(newVersionType, config);
 
 generateReleaseNotes(newVersion, config);
 
@@ -68,4 +68,4 @@ if (config.autoCommit) {
   execSync(`git add . && git commit -m "chore: release v${newVersion}" && git tag -a v${newVersion} -m "Release v${newVersion}" && git push --follow-tags`, { stdio: 'inherit' });
 }
 
-console.log(`New release version: ${newVersion} of type ${newVersionType}`);
+console.log(`New release version: ${newVersion} of type ${newVersionType.type}`);
