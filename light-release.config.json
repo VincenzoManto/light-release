@@ -6,6 +6,7 @@
   "dateFormat": "YYYY-MM-DD",
   "showCommitImpact": true,
   "autoCommit": true,
+  "squashIntoSingleVersioning": true,
   "showAuthorLinks": true,
   "defaultImpactThresholds": {
     "low": 1,
