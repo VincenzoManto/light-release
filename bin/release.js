@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const { loadConfig, checkAndCreateConfig } = require('../lib/config');
-const { getCommits, classifyVersion } = require('../lib/git-utils');
+const { getCommits, classifyVersion, checkIfChangesExist } = require('../lib/git-utils');
 const { generateReleaseNotes } = require('../lib/release-notes');
 const { updateVersion, getNewVersion } = require('../lib/versioning');
 
@@ -53,6 +53,11 @@ const { updateVersion, getNewVersion } = require('../lib/versioning');
 checkAndCreateConfig();
 
 const config = loadConfig();
+
+if (config.blockIfChangesExist && checkIfChangesExist()) {
+  console.log('\x1b[31m%s\x1b[0m', 'Error: There are uncommitted changes in the repository. Please commit or stash them before proceeding or change blockIfChangesExist config');
+  process.exit(1);
+}
 
 const commits = getCommits();
 
