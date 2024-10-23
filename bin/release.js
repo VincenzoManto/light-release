@@ -63,7 +63,7 @@ const newVersion = updateVersion(newVersionType, config);
 generateReleaseNotes(newVersion, config);
 
 if (config.autoCommit) {
-  console.log('Auto commit is enabled. Committing the changes to the repository...');
+  console.log('\x1b[36m%s\x1b[0m', '\nAuto commit is enabled. Committing the changes to the repository...\n');
   const execSync = require('child_process').execSync;
   execSync(`git add . && git commit -m "chore: release v${newVersion}" && git tag -a v${newVersion} -m "Release v${newVersion}" && git push --follow-tags`, { stdio: 'inherit' });
 }
