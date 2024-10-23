@@ -2,7 +2,7 @@
 const { loadConfig, checkAndCreateConfig } = require('../lib/config');
 const { getCommits, classifyVersion } = require('../lib/git-utils');
 const { generateReleaseNotes } = require('../lib/release-notes');
-const { updateVersion } = require('../lib/versioning');
+const { updateVersion, getNewVersion } = require('../lib/versioning');
 
 /**
  * @file release.js
@@ -58,9 +58,11 @@ const commits = getCommits();
 
 const newVersionType = classifyVersion(commits, config);
 
-const newVersion = updateVersion(newVersionType, config);
+const newVersion = getNewVersion(newVersionType, config);
 
 generateReleaseNotes(newVersion, config);
+
+updateVersion(newVersion)
 
 if (config.autoCommit) {
   console.log('\x1b[36m%s\x1b[0m', '\nAuto commit is enabled. Committing the changes to the repository...\n');
