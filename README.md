@@ -61,6 +61,12 @@ This will analyze your commit history, determine the release version, and genera
 
 On the first run, Light Release will generate a default configuration file named `light-release.config.json` in your project's root directory. You can modify this file to customize the behavior of the tool according to your preferences. If the file doesn't exist, everything will be activated by default—because who doesn't love a little plug-and-play?
 
+### Without `package.json` (e.g. Deno)
+
+If your version is not in `package.json` and instead is in another file (e.g. `deno.json`), you can change the config in `light-release.config.json` and alter `versionFileName` to the file name that you need to modify. The file is expected to be a JSON file and the version will be in the `version` field.
+
+For security reasons, we allow only the following values: `package.json`, `deno.json`, or `jsr.json`.
+
 ## What It Produces
 
 After running Light Release, you can expect to find:
