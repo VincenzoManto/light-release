@@ -61,6 +61,23 @@ This will analyze your commit history, determine the release version, and genera
 
 On the first run, Light Release will generate a default configuration file named `light-release.config.json` in your project's root directory. You can modify this file to customize the behavior of the tool according to your preferences. If the file doesn't exist, everything will be activated by default—because who doesn't love a little plug-and-play?
 
+
+| Option                     | Type    | Default                  | Description                                                                                                                                                                 |
+|----------------------------|---------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `generateMarkdown`         | Boolean | `true`                   | If `true`, generates release notes in Markdown format. Useful for lightweight, text-based logs.                                                                            |
+| `generateHTML`             | Boolean | `true`                   | If `true`, generates release notes in HTML format. Ideal for a web-viewable format of release notes.                                                                       |
+| `releaseNotesDir`          | String  | `.release-notes`         | Specifies the directory to store release notes files.                                                                                                                      |
+| `badgeStyle`               | String  | `flat-square`            | Defines the style of version badges (styles depend on badge provider).                                                                                                     |
+| `dateFormat`               | String  | `YYYY-MM-DD`             | Specifies the date format for release notes. Adjust based on preference.                                                                                                   |
+| `showCommitImpact`         | Boolean | `true`                   | If `true`, includes an impact summary based on commits in release notes to highlight key changes.                                                                          |
+| `blockIfChangesExist`      | Boolean | `true`                   | Prevents releases if uncommitted changes are in the working directory, ensuring a clean and stable flow.                                                                   |
+| `autoCommit`               | Boolean | `true`                   | If `true`, automatically commits generated files (like release notes) after each release, streamlining the workflow.                                                       |
+| `squashIntoSingleVersioning` | Boolean | `true`                 | Combines all new changes into a single version increment to avoid multiple minor jumps in versioning, ideal for simplified versioning.                                     |
+| `showAuthorLinks`          | Boolean | `true`                   | If `true`, shows clickable links to authors in the release notes, useful for tracking contributors.                                                                        |
+| `defaultImpactThresholds`   | Object  | `{ "low": 1, "medium": 5, "high": 10 }` | Sets thresholds for categorizing impact of changes: `low`, `medium`, `high`, based on commit count.                                        |
+
+
+
 ## What It Produces
 
 After running Light Release, you can expect to find:
