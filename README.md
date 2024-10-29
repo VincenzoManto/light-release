@@ -76,6 +76,8 @@ On the first run, Light Release will generate a default configuration file named
 | `squashIntoSingleVersioning` | Boolean | `true`                 | Combines all new changes into a single version increment to avoid multiple minor jumps in versioning, ideal for simplified versioning.                                     |
 | `showAuthorLinks`          | Boolean | `true`                   | If `true`, shows clickable links to authors in the release notes, useful for tracking contributors.                                                                        |
 | `defaultImpactThresholds`   | Object  | `{ "low": 1, "medium": 5, "high": 10 }` | Sets thresholds for categorizing impact of changes: `low`, `medium`, `high`, based on commit count.                                        |
+| `versionFileName`   | String  | `package.json` | If your version is not in `package.json` and instead is in another file (e.g. `deno.json`). The file is expected to be a JSON file and the version will be in the `version` field.          |
+
 
 
 
