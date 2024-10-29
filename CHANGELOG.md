@@ -1,3 +1,8 @@
+## [2.2.10] - October 28, 2024
+
+### Changes
+- Release notes generated for version [2.2.10](.release-notes/2.2.10/release.md)
+
 ## [2.2.9] - October 23, 2024
 
 ### Changes
