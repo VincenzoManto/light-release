@@ -59,7 +59,7 @@ if (config.blockIfChangesExist && checkIfChangesExist()) {
   process.exit(1);
 }
 
-const commits = getCommits();
+const commits = getCommits(config);
 
 const newVersionType = classifyVersion(commits, config);
 
@@ -67,7 +67,7 @@ const newVersion = getNewVersion(newVersionType, config);
 
 generateReleaseNotes(newVersion, config);
 
-updateVersion(newVersion)
+updateVersion(newVersion, config);
 
 console.log(`New release version: ${newVersion} of type ${newVersionType.type}`);
 

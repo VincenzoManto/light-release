@@ -62,6 +62,7 @@ This will analyze your commit history, determine the release version, and genera
 On the first run, Light Release will generate a default configuration file named `light-release.config.json` in your project's root directory. You can modify this file to customize the behavior of the tool according to your preferences. If the file doesn't exist, everything will be activated by default—because who doesn't love a little plug-and-play?
 
 
+
 | Option                     | Type    | Default                  | Description                                                                                                                                                                 |
 |----------------------------|---------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `generateMarkdown`         | Boolean | `true`                   | If `true`, generates release notes in Markdown format. Useful for lightweight, text-based logs.                                                                            |
@@ -75,6 +76,15 @@ On the first run, Light Release will generate a default configuration file named
 | `squashIntoSingleVersioning` | Boolean | `true`                 | Combines all new changes into a single version increment to avoid multiple minor jumps in versioning, ideal for simplified versioning.                                     |
 | `showAuthorLinks`          | Boolean | `true`                   | If `true`, shows clickable links to authors in the release notes, useful for tracking contributors.                                                                        |
 | `defaultImpactThresholds`   | Object  | `{ "low": 1, "medium": 5, "high": 10 }` | Sets thresholds for categorizing impact of changes: `low`, `medium`, `high`, based on commit count.                                        |
+
+
+
+### Without `package.json` (e.g. Deno)
+
+If your version is not in `package.json` and instead is in another file (e.g. `deno.json`), you can change the config in `light-release.config.json` and alter `versionFileName` to the file name that you need to modify. The file is expected to be a JSON file and the version will be in the `version` field.
+
+For security reasons, we allow only the following values: `package.json`, `deno.json`, or `jsr.json`.
+
 
 
 
