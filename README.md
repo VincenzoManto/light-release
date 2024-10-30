@@ -77,6 +77,10 @@ On the first run, Light Release will generate a default configuration file named
 | `showAuthorLinks`          | Boolean | `true`                   | If `true`, shows clickable links to authors in the release notes, useful for tracking contributors.                                                                        |
 | `defaultImpactThresholds`   | Object  | `{ "low": 1, "medium": 5, "high": 10 }` | Sets thresholds for categorizing impact of changes: `low`, `medium`, `high`, based on commit count.                                        |
 | `versionFileName`   | String  | `package.json` | If your version is not in `package.json` and instead is in another file (e.g. `deno.json`). The file is expected to be a JSON file and the version will be in the `version` field.          |
+| `majorWords`               | Array   | `["BREAKING CHANGE", "major", "perf", "^\s*feat(\(.*\))?!:"]`    | Specifies keywords in commit messages that trigger a major version bump.                                                                                                   |
+| `minorWords`               | Array   | `["feat", "minor", "feature", "refactor"]`               | Specifies keywords in commit messages that trigger a minor version bump.                                                                                                   |
+| `patchWords`               | Array   | `["fix", "perf", "close|closes|fixes|resolves|fix|fixed|closed|resolve|resolved", "^\s*(style|docs|test|chore)\s*:"]`        | Specifies keywords in commit messages that trigger a patch version bump.                                                                                                   |
+| `prereleaseWords`          | Array   | `["beta", "alpha", "rc"]`| Specifies keywords in commit messages that trigger a prerelease version bump.                                                                                              |
 
 
 
