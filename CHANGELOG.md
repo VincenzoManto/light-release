@@ -1,3 +1,8 @@
+## [2.4.0] - November 17, 2024
+
+### Changes
+- Release notes generated for version [2.4.0](.release-notes/2.4.0/release.md)
+
 ## [2.4.0] - November 3, 2024
 
 ### Changes
