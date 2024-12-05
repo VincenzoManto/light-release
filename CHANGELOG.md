@@ -1,3 +1,8 @@
+## [2.5.2] - December 5, 2024
+
+### Changes
+- Release notes generated for version [2.5.2](.release-notes/2.5.2/release.md)
+
 ## [2.5.1] - December 5, 2024
 
 ### Changes
