@@ -3,6 +3,11 @@
 ### Changes
 - Release notes generated for version [2.4.2](.release-notes/2.4.2/release.md)
 
+## [2.4.2] - December 5, 2024
+
+### Changes
+- Release notes generated for version [2.4.2](.release-notes/2.4.2/release.md)
+
 ## [2.4.1] - November 18, 2024
 
 ### Changes
