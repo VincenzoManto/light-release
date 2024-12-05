@@ -85,7 +85,7 @@ if (config.autoCommit) {
       console.warn(`\n\x1b[33mWarning: Tag v${newVersion} already exists. Skipping tag creation.\x1b[0m\n`);
       execSync(`git add . && git commit -m "chore: release v${newVersion}" && git push`, { stdio: 'inherit' });
     } else {
-      console.log(`git add . && git commit -m "chore: release v${newVersion}" && git tag -a v${newVersion} -m "${releaseNotes.mdContent || '# Release note v' + newVersion}" && git push --follow-tags`);
+      console.log(`git add . && git commit -m "chore: release v${newVersion}" && git tag -a v${newVersion} -m "${releaseNotes.mdContent.replace(/\n/g, '\\n') || '# Release note v' + newVersion}" && git push --follow-tags`);
       execSync(`git add . && git commit -m "chore: release v${newVersion}" && git tag -a v${newVersion} -m "${releaseNotes.mdContent.replace(/\n/g, '\\n') || '# Release note v' + newVersion}" && git push --follow-tags`, { stdio: 'inherit' });
     }
   } catch (err) {
