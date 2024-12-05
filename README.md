@@ -57,6 +57,43 @@ npm run release
 
 This will analyze your commit history, determine the release version, and generate the release notes in both HTML and Markdown formats. 
 
+### Difference with Semantic-release
+
+1. **No dependencies**:  
+   - **Semantic-release** relies on plugins for almost every functionality, including versioning, changelog generation, and publishing. These plugins introduce a significant dependency chain that can lead to vulnerabilities or conflicts.  
+   - **Light Release**, on the other hand, is entirely dependency-free, reducing the risk of breaking changes or security issues from external libraries.
+
+---
+
+2. **Built-in customizability**:  
+   - With **semantic-release**, customization requires selecting and configuring specific plugins, often involving additional dependencies or complex setups. For example, generating release notes in different formats or modifying version bump keywords requires third-party plugins or extended configurations.  
+   - **Light Release** provides built-in options for:
+     - Release notes in **Markdown** and **HTML** formats.  
+     - Custom keywords for major, minor, and patch versioning directly in the configuration.  
+     - Customizable thresholds to categorize the impact of changes.  
+     This is all managed via a single, automatically generated config file without needing extra plugins.
+
+---
+
+3. **Hassle-free setup**:  
+   - Setting up **semantic-release** involves configuring multiple plugins and often requires CI/CD pipelines to manage releases effectively. It can be overwhelming for smaller projects or developers unfamiliar with its ecosystem.  
+   - **Light Release** is designed for simplicity:
+     - A single command (`npx light-release`) automates the process.  
+     - On the first run, it generates a default configuration file, enabling a plug-and-play experience.  
+
+---
+
+4. **Works without `package.json`**:  
+   - **Semantic-release** is tightly coupled with `package.json` for versioning. If you're working on non-Node.js projects, it doesn’t natively support alternative versioning files.  
+   - **Light Release** allows you to define other JSON-based versioning files (e.g., `deno.json` or `jsr.json`) in the configuration, offering flexibility for projects outside the Node.js ecosystem.
+
+---
+
+5. **Streamlined for smaller projects**:  
+   - **Semantic-release** is optimized for larger teams and projects, focusing on full automation and continuous delivery pipelines. This can be overkill for smaller projects, leading to unnecessary complexity and overhead.  
+   - **Light Release** is specifically designed for smaller, independent projects or developers who value simplicity and control. It avoids the complexity of semantic-release while maintaining essential features like conventional commit compatibility and automated release note generation.
+
+
 ### Configuration
 
 On the first run, Light Release will generate a default configuration file named `light-release.config.json` in your project's root directory. You can modify this file to customize the behavior of the tool according to your preferences. If the file doesn't exist, everything will be activated by default—because who doesn't love a little plug-and-play?
