@@ -86,7 +86,7 @@ if (config.autoCommit) {
       execSync(`git add . && git commit -m "chore: release v${newVersion}" && git push`, { stdio: 'inherit' });
     } else {
       console.log(`git add . && git commit -m "chore: release v${newVersion}" && git tag -a v${newVersion} -m "${releaseNotes.mdContent || '# Release note v' + newVersion}" && git push --follow-tags`);
-      execSync(`git add . && git commit -m "chore: release v${newVersion}" && git tag -a v${newVersion} -m "${releaseNotes.mdContent || '# Release note v' + newVersion}" && git push --follow-tags`, { stdio: 'inherit' });
+      execSync(`git add . && git commit -m "chore: release v${newVersion}" && git tag -a v${newVersion} -m "${releaseNotes.mdContent.replace(/\n/g, '\\n') || '# Release note v' + newVersion}" && git push --follow-tags`, { stdio: 'inherit' });
     }
   } catch (err) {
     console.error('\x1b[31m%s\x1b[0m', 'Error: Unable to commit the changes to the repository.');
