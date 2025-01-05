@@ -1,3 +1,8 @@
+## [2.5.5] - January 5, 2025
+
+### Changes
+- Release notes generated for version [2.5.5](.release-notes/2.5.5/release.md)
+
 ## [2.5.4] - December 5, 2024
 
 ### Changes
