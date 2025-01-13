@@ -26,6 +26,14 @@ Getting started with Light Release is a breeze! Just run the following command i
 npm install light-release --save-dev
 ```
 
+```bash
+yarn add light-release --save-dev
+```
+
+```bash
+pnpm add light-release --save
+```
+
 Make sure you have **Git** installed, as Light Release relies on your commit history. If Git is not found, Light Release will kindly inform you to install it. 
 
 ## How to Use It
