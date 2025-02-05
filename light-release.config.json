@@ -6,7 +6,7 @@
   "dateFormat": "YYYY-MM-DD",
   "showCommitImpact": true,
   "blockIfChangesExist": false,
-  "autoCommit": true,
+  "autoCommit": false,
   "versionFileName": "package.json",
   "squashIntoSingleVersioning": true,
   "showAuthorLinks": true,
