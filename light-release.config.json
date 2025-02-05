@@ -5,7 +5,7 @@
   "badgeStyle": "flat-square",
   "dateFormat": "YYYY-MM-DD",
   "showCommitImpact": true,
-  "blockIfChangesExist": true,
+  "blockIfChangesExist": false,
   "autoCommit": true,
   "versionFileName": "package.json",
   "squashIntoSingleVersioning": true,
