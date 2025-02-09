@@ -1,3 +1,8 @@
+## [2.7.0] - February 9, 2025
+
+### Changes
+- Release notes generated for version [2.7.0](.release-notes/2.7.0/release.md)
+
 ## [2.6.2] - February 7, 2025
 
 ### Changes
