@@ -12,6 +12,7 @@ Light Release is a lightweight alternative to [semantic-release](https://semanti
 [![npm version](https://img.shields.io/npm/v/light-release)](https://www.npmjs.com/package/light-release)
 [![npm downloads](https://img.shields.io/npm/dm/light-release)](https://www.npmjs.com/package/light-release)
 ![test passed](https://img.shields.io/badge/tests-passing-brightgreen)
+[![Installs](https://img.shields.io/npm/dt/light-release)](https://www.npmjs.com/package/light-release)
 
 
 ## Purpose
