@@ -50,11 +50,11 @@ const { updateVersion, getNewVersion } = require('../lib/versioning');
  * @param {Object} config - The configuration settings.
  */
 
-checkAndCreateConfig();
+const created = checkAndCreateConfig();
 
 const config = loadConfig();
 
-if (config.blockIfChangesExist && checkIfChangesExist()) {
+if ((config.blockIfChangesExist && !created) && checkIfChangesExist()) {
   console.log('\x1b[31m%s\x1b[0m', 'Error: There are uncommitted changes in the repository. Please commit or stash them before proceeding or change blockIfChangesExist config');
   process.exit(1);
 }
