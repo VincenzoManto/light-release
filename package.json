@@ -1,6 +1,6 @@
 {
   "name": "light-release",
-  "version": "2.7.2",
+  "version": "2.7.3",
   "description": "A lightweight tool to automate your release process, compatible with conventional commit messages. It reads your commit history, determines the release type, and generates release notes without unnecessary dependencies.",
   "bin": {
     "light-release": "./bin/release.js"
