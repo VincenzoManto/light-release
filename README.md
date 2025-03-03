@@ -127,7 +127,7 @@ On the first run, Light Release will generate a default configuration file named
 | `minorWords`               | Array   | `["feat", "minor", "feature", "refactor"]`               | Specifies keywords in commit messages that trigger a minor version bump.                                                                                                   |
 | `patchWords`               | Array   | `["fix", "perf", "close", "closes", "fixes", "resolves", "fix", "fixed", "closed", "resolve", "resolved"], "style", "docs", "test", "chore"]`        | Specifies keywords in commit messages that trigger a patch version bump.                                                                                                   |
 | `prereleaseWords`          | Array   | `["beta", "alpha", "rc"]`| Specifies keywords in commit messages that trigger a prerelease version bump.                                                                                              |
-
+| `baseUrl`                   | String  | `.`                     | Specifies the base URL for author links. Useful for linking to GitHub profiles or other platforms.                                                                        |
 
 
 
