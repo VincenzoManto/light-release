@@ -128,6 +128,32 @@ On the first run, Light Release will generate a default configuration file named
 | `patchWords`               | Array   | `["fix", "perf", "close", "closes", "fixes", "resolves", "fix", "fixed", "closed", "resolve", "resolved"], "style", "docs", "test", "chore"]`        | Specifies keywords in commit messages that trigger a patch version bump.                                                                                                   |
 | `prereleaseWords`          | Array   | `["beta", "alpha", "rc"]`| Specifies keywords in commit messages that trigger a prerelease version bump.                                                                                              |
 | `baseUrl`                   | String  | `.`                     | Specifies the base URL for author links. Useful for linking to GitHub profiles or other platforms.                                                                        |
+| `aiComment`                | Object  | | Enables AI-generated comments for release notes. Requires an OpenAI API key.                                                                                               |
+| `aiComment.enabled`        | Boolean | `false`                 | If `true`, enables the AI comment feature.                                                                                                                                |
+| `aiComment.openAIKey`      | String  | `""`                    | Your OpenAI API key. Required for generating AI comments.                                                                                                                  |
+| `aiComment.additionalPrompt`| String  | `""`                    | An optional prompt to customize the tone or style of the AI-generated comments (e.g., "Be funny").                                                                          |
+
+### AI Comment Feature
+
+Light Release now supports an optional AI-generated comment feature to add a touch of humor or insight to your release notes. This feature uses OpenAI's API to generate comments based on your release content.
+
+To enable this feature, update your `light-release.config.json` file with the following:
+
+```json
+"aiComment": {
+   "enabled": true,
+   "openAIKey": "your-openai-api-key",
+   "additionalPrompt": "Be funny"
+}
+```
+
+| Option             | Type    | Default | Description                                                                                     |
+|--------------------|---------|---------|-------------------------------------------------------------------------------------------------|
+| `enabled`          | Boolean | `false` | Enables or disables the AI comment feature.                                                    |
+| `openAIKey`        | String  | `""`    | Your OpenAI API key. Required for generating AI comments.                                       |
+| `additionalPrompt` | String  | `""`    | An optional prompt to customize the tone or style of the AI-generated comments (e.g., "Be funny"). |
+
+When enabled, Light Release will append a witty or insightful comment to your release notes, making them more engaging for your audience. Note that this feature requires an active OpenAI API key and internet connectivity.
 
 
 
