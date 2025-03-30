@@ -7,6 +7,11 @@
   "showCommitImpact": true,
   "blockIfChangesExist": false,
   "autoCommit": false,
+  "aiComment": {
+    "enabled": true,
+    "openAIKey": "",
+    "additionalPrompt": "Be funny"
+  },
   "versionFileName": "package.json",
   "squashIntoSingleVersioning": true,
   "showAuthorLinks": true,

@@ -8,7 +8,8 @@
   "scripts": {
     "release": "light-release",
     "publish:npm": "light-release && npm publish",
-    "test": "mocha tests/test.js"
+    "test": "mocha tests/test.js",
+    "run": "node bin/release.js"
   },
   "keywords": [
     "release",
