@@ -155,6 +155,14 @@ To enable this feature, update your `light-release.config.json` file with the fo
 
 When enabled, Light Release will append a witty or insightful comment to your release notes, making them more engaging for your audience. Note that this feature requires an active OpenAI API key and internet connectivity.
 
+#### Important Note
+If you don't want to include your OpenAI key in the `light-release.config.json` file, you can set it as an environment variable. Just set the `OPENAI_API_KEY` variable in your environment, and Light Release will pick it up automatically.
+
+```bash
+$env:OPENAI_API_KEY='<key>' # For Windows PowerShell
+
+export OPENAI_API_KEY='<key>' # For Unix/Linux/MacOS
+```
 
 
 ### Without `package.json` (e.g. Deno)
