@@ -32,7 +32,7 @@ yarn add light-release --save-dev
 ```
 
 ```bash
-pnpm add light-release --save
+pnpm add light-release --save-dev
 ```
 
 Make sure you have **Git** installed, as Light Release relies on your commit history. If Git is not found, Light Release will kindly inform you to install it. 
