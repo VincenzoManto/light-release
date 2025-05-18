@@ -1,6 +1,6 @@
 {
   "name": "light-release",
-  "version": "2.9.0",
+  "version": "2.9.1",
   "description": "A lightweight tool to automate your release process, compatible with conventional commit messages. It reads your commit history, determines the release type, and generates release notes without unnecessary dependencies.",
   "bin": {
     "light-release": "./bin/release.js"
@@ -41,5 +41,8 @@
     "fs-extra": "^10.0.0"
   },
   "author": "Vincenzo Manto",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "expect.js": "^0.3.1"
+  }
 }
