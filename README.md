@@ -220,10 +220,6 @@ A big thank you to all the wonderful contributors who help make Light Release sh
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details. 
 
-## GitAds Sponsored
-[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=vincenzomanto/light-release@github)](https://gitads.dev/v1/ad-track?source=vincenzomanto/light-release@github)
-
-
 ## References
 
 - [Semantic Release](https://semantic-release.gitbook.io/semantic-release/)
@@ -242,3 +238,10 @@ If you find Light Release useful, please consider citing it in your work:
   url = {https://github.com/VincenzoManto/light-release},
 }
 ```
+
+---
+
+
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=vincenzomanto/light-release@github)](https://gitads.dev/v1/ad-track?source=vincenzomanto/light-release@github)
+
