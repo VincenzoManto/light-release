@@ -1,5 +1,7 @@
 # Light Release
 
+<!-- GitAds-Verify: XTTK2Y9GIPHOZ4N7O8799R4TQCBJ6Z35 -->
+
 A lightweight tool to automate your release process, compatible with conventional commit messages. It reads your commit history, determines the release type, and generates release notes without unnecessary dependencies.
 
 ## What is Light Release?
